@@ -12,5 +12,21 @@ public class Main {
         if (!isZero) {
 			System.out.println("Got some remainder");
 		}
+
+        int secondScore = 10000;
+        int levelCompleted = 8;
+        int bonus = 200;
+
+        if (secondScore >= 1000 && secondScore < 5000) {
+			System.out.println("Your score was between 1000 and 5000");
+		}
+        else if (secondScore < 1000) {
+			System.out.println("Your score was under 1000");
+		} else {
+			System.out.println("Nice job! You scored over 5000!");
+		}
+
+        int finalScore = secondScore + levelCompleted * bonus;
+		System.out.println("Your final score is " + finalScore);
     }
 }
